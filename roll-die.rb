@@ -1,1 +1,1 @@
-puts " The rusult of your roll is #{Random.rand(6)}"
+puts " The rusult of your roll is #{Random.rand(1..6)}"
