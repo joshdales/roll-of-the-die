@@ -49,6 +49,6 @@ dice_rolls.each_index{ |i|
 
 puts dice_totals
 
-dice_totals.each do |key, value|
-puts "#{dice_totals[value]} occurs #{dice_totals[value]} times"
+dice_totals.each do |total, occurs|
+puts "#{total} occurs #{occurs} times"
 end
