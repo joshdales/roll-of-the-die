@@ -10,5 +10,4 @@ sort_roll.each do |roll|
   puts "The rusult of your roll is #{roll}"
 end
 
-puts "The lowest number is #{sort_roll.first}."
-puts "The highest number is #{sort_roll.last}."
+puts "The lowest number is #{sort_roll.first}.\nThe highest number is #{sort_roll.last}."
