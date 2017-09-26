@@ -20,6 +20,7 @@ dice_totals = {
   12 => 0
 }
 
+
 dice_rolls.each_index{ |i|
   if dice_rolls[i][0] + dice_rolls [i][1] == 2
     dice_totals[2] += 1
@@ -48,6 +49,12 @@ dice_rolls.each_index{ |i|
 
 puts dice_totals
 
+a = 0
 dice_totals.each do |total, occurs|
-puts "#{total} occurs #{occurs} times"
+  a += occurs
+end
+
+puts a
+dice_totals.each do |total, occurs|
+  puts "The odds of #{total} coming up are #{((occurs/a.to_f) * 100).round}%"
 end
